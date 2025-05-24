@@ -2,15 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>tinny.io - Automation Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <h1>Welcome to tinny.io!</h1>
-  <p>This is your automation dashboard website, deployed via Netlify and GitHub.</p>
-  <footer>
-    <small>Made with ❤️ by Echo & sahbaj3691</small>
-  </footer>
-</body>
-</html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>vidspark studio - Automation Launcher</title>
+        <link rel="stylesheet" href="style.css" />
+        </head>
+        <body>
+          <header>
+              <span id="app-name">vidspark studio</span>
+                  <span id="star-icon">★</span>
+                    </header>
+                      <div class="container">
+                          <!-- Left Dashboard Widget -->
+                              <aside id="dashboard-panel">
+                                    <h3>📊 Dashboard</h3>
+                                          <div id="dashboard-content">
+                                                  <p>Automations Run: <span id="auto-count">0</span></p>
+                                                          <p>Last Status: <span id="last-status">Idle</span></p>
+                                                                </div>
+                                                                    </aside>
+
+                                                                        <!-- Main Content -->
+                                                                            <main>
+                                                                                  <div class="card welcome-card">
+                                                                                          <h1>Welcome to <span style="color:#1976d2;">tinny.io!</span></h1>
+                                                                                                  <p>This is your automation dashboard website,<br>deployed via <b>Netlify</b> and <b>GitHub</b>.</p>
+                                                                                                        </div>
+                                                                                                              <div class="card automation-card">
+                                                                                                                      <h2>🚀 Automation Status</h2>
+                                                                                                                              <p><b>Status:</b> <span id="automation-status">Idle</span></p>
+                                                                                                                                      <div class="button-row">
+                                                                                                                                                <button class="main-btn" onclick="startAutomation()">Start Automation</button>
+                                                                                                                                                          <button class="main-btn stop" onclick="stopAutomation()">Stop</button>
+                                                                                                                                                                  </div>
+                                                                                                                                                                          <div id="progress-bar-bg">
+                                                                                                                                                                                    <div id="progress-bar"></div>
+                                                                                                                                                                                            </div>
+                                                                                                                                                                                                    <div id="live-logs"></div>
+                                                                                                                                                                                                          </div>
+                                                                                                                                                                                                              </main>
+
+                                                                                                                                                                                                                  <!-- Right Notification Panel -->
+                                                                                                                                                                                                                      <aside id="notification-panel">
+                                                                                                                                                                                                                            <h3>🔔 Notifications</h3>
+                                                                                                                                                                                                                                  <ul id="notifications-list"></ul>
+                                                                                                                                                                                                                                      </aside>
+                                                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                                                          <footer>
+                                                                                                                                                                                                                                              <small>Made with ❤️ by Echo & sahbaj3691</small>
+                                                                                                                                                                                                                                                </footer>
+                                                                                                                                                                                                                                                  <script src="script.js"></script>
+                                                                                                                                                                                                                                                  </body>
+                                                                                                                                                                                                                                                  </html>
+                                                                                                                                                                                                                                                  
